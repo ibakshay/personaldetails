@@ -1,3 +1,3 @@
 # personaldetails
 
-Testing with CLA Assistant application 2
+Testing with CLA-bot github app
