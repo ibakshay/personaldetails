@@ -1,2 +1,3 @@
 # personaldetails
 
+cla-assistant
