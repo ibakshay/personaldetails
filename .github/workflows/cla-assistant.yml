@@ -1,0 +1,21 @@
+name: "CLA Assistant"
+on:
+  pull_request:
+    branches: 
+    - master
+    
+
+jobs:
+  CLAssistant:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: "TEST ACTION"
+      if: github.event.action == 'opened' || github.event.action == 'synchronize'
+      uses: ibakshay/action-template@dev-release
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with: 
+        pathtocla: 'cla.json'
+        branch: 'master'
