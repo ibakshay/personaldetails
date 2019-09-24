@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: run-something
-      if: github.event.issue_comment == 'created'
+      if: github.event.issue_comment.body == 'akshay'
       run: echo start the CLA testing flow
 
