@@ -10,5 +10,5 @@ jobs:
     steps:
     - name: run-something
       if: github.event.issue.comment.body == "test"
-        run: |
-        echo start the CLA testing flow
+      run: |
+      echo start the CLA testing flow
